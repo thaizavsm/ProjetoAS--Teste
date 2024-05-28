@@ -1,0 +1,59 @@
+/* Estilos para telas maiores que 768px (computadores, tablets em modo paisagem) */
+@media only screen and (min-width: 768px) {
+    .container {
+        height: 100vh; /* Usar altura total da viewport */
+        padding-top: 0; /* Remover espaço superior */
+    }
+
+    .content-box {
+        width: 80%; /* Reduzir a largura do conteúdo */
+        height: 80%; /* Reduzir a altura do conteúdo */
+        padding: 40px; /* Aumentar o espaçamento interno */
+    }
+
+    .card-container {
+        margin-left: 0; /* Remover margem esquerda */
+    }
+
+    .card {
+        width: 200px; /* Ajustar a largura do card */
+        height: 250px; /* Ajustar a altura do card */
+        margin: 0 20px 20px 0; /* Ajustar a margem do card */
+    }
+}
+
+/* Estilos para telas menores que 768px (dispositivos móveis) */
+@media only screen and (max-width: 767px) {
+    .container {
+        height: auto; /* Altura automática */
+        padding-top: 20px; /* Espaçamento superior */
+    }
+
+    .content-box {
+        width: 100%; /* Largura total */
+        height: auto; /* Altura automática */
+        padding: 20px; /* Espaçamento interno menor */
+    }
+
+    .card {
+        width: calc(50% - 10px); /* Ajustar a largura do card */
+        height: 200px; /* Ajustar a altura do card */
+        margin: 0 10px 10px 0; /* Ajustar a margem do card */
+    }
+
+    .card:nth-child(odd) {
+        margin-right: 0; /* Remover margem direita para os cards ímpares */
+    }
+
+    .create-button {
+        top: 10px; /* Posição do botão de criação no topo */
+        right: 10px; /* Posição do botão de criação na direita */
+    }
+
+    .edit-button,
+    .start-button {
+        left: 50%; /* Posição dos botões de edição e início no centro */
+        transform: translateX(-50%);
+    }
+}
+
